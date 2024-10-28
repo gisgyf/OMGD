@@ -1,5 +1,5 @@
 # Optimal Multivariate-stratification Geographical Detector
-doi:https://doi.org/10.1080/15481603.2024.2422941
+***DOI***: https://doi.org/10.1080/15481603.2024.2422941
 
 ## Files description
 - ***data*** folder contains all the case data used in the article, stored in csv file format.<br>
