@@ -23,4 +23,10 @@ You can create your own environment with the following dependencies or download 
 - scipy == 1.12.0
 - seaborn == 0.12.2
 ### Conda environment
-Download anaconda from https://www.anaconda.com/, open anaconda promt (using search bar), change the dictonary to the folder which contains *'omgd.yml'*, input *'conda env create -f omgd.yml'* and *'conda env list'* to check if the omgd environment is configurated.
+Download anaconda from https://www.anaconda.com/, open anaconda promt (using search bar), change the dictonary to the folder which contains ***'omgd.yml'***, input ***'conda env create -f omgd.yml'*** and ***'conda env list'*** to check if the omgd environment is configurated.
+
+## How to use
+Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
+### Explanation
+> path_list = ['data/LST2000.csv', 'data/LST3000.csv', 'data/LST4000.csv', 'data/LST5000.csv',
+> 'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']
