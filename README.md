@@ -31,30 +31,28 @@ Download anaconda from https://www.anaconda.com/, open anaconda promt (using sea
 Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 ### Explanation
 - Define a list that contains data with multiple spatial scale
-> path_list = ['data/LST2000.csv', 'data/LST3000.csv', 'data/LST4000.csv', 'data/LST5000.csv',
->              'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']
-<br>
+> path_list = ['data/LST2000.csv', 'data/LST3000.csv', 'data/LST4000.csv', 'data/LST5000.csv',<br>
+>              'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']<br>
 
 - Define the dependent variable[Y] and explanatory variables[X], the discretization(classification) interval[discitv] and the number of explanatory variables used in the calculation(n_variates).
-> data = pd.read_csv('data/LST2000.csv')
-> Y = data.columns[0]
-> X = data.columns[1:]
-> discitv = range(3, 8)
-> n_variates = 2
-<br>
+> data = pd.read_csv('data/LST2000.csv')<br>
+> Y = data.columns[0]<br>
+> X = data.columns[1:]<br>
+> discitv = range(3, 8)<br>
+> n_variates = 2<br>
 
 - Run the scale detector to detect the optimal spatial scale for spatial stratified heterogeneity
-> scale_result, best_scale = omgd.scale_detector(path_list, Y, X, discitv, quantile=0.8, n_variates=n_variates)
-> omgd.scale_plot(scale_result, size_list=[2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000], dpi=200, unit='m')
-> plt.show()
+> scale_result, best_scale = omgd.scale_detector(path_list, Y, X, discitv, quantile=0.8, n_variates=n_variates)<br>
+> omgd.scale_plot(scale_result, size_list=[2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000], dpi=200, unit='m')<br>
+> plt.show()<br>
 - ***Parameters:*** omgd.scale_detector(path_list: Sequence, Y, factors:Sequence, disc_interval:Sequence, type_factors:Sequence=[], quantile:float=0.8, n_variates=1, random_state=0)
 - ***Parameters:*** omgd.scale_plot(scale_result, size_list=[], dpi=100, unit='')
 <br>
 
 - One step OMGD model
-> omgd_result = omgd.omgd(data, Y=Y, factors=X, n_variates=n_variates, disc_interval=discitv)
-> omgd.omgd_plot(omgd_result, unit_list=['°C', '%', 'm', '', '', '', ''])
-> plt.show()
+> omgd_result = omgd.omgd(data, Y=Y, factors=X, n_variates=n_variates, disc_interval=discitv)<br>
+> omgd.omgd_plot(omgd_result, unit_list=['°C', '%', 'm', '', '', '', ''])<br>
+> plt.show()<br>
 - ***Parameters:*** omgd(df:pd.DataFrame, Y, factors:Sequence, n_variates:int, disc_interval:Sequence, type_factors:Sequence=[], random_state=0)
 - The result of the ***omgd.omgd*** function returns a dictionary, defined as omgd_result here, which includes original dataframe: omgd_result['original'], classification result: omgd_result['classify'], result of the factor detector: omgd_result['factor'], result of the interaction detector: omgd_result['interaction'], result of the risk detector: omgd_result['risk'], and result of the ecological detector: omgd_result['ecological'].
 <br>
