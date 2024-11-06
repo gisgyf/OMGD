@@ -29,7 +29,7 @@ Download anaconda from https://www.anaconda.com/, open anaconda promt (using sea
 
 ## How to use
 Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
-- Explanation
+### Explanation
 - Define a list that contains data with multiple spatial scale
 > path_list = ['data/LST2000.csv', 'data/LST3000.csv', 'data/LST4000.csv', 'data/LST5000.csv',<br>
 >              'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']<br>
@@ -45,6 +45,7 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 > scale_result, best_scale = omgd.scale_detector(path_list, Y, X, discitv, quantile=0.8, n_variates=n_variates)<br>
 > omgd.scale_plot(scale_result, size_list=[2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000], dpi=200, unit='m')<br>
 > plt.show()<br>
+
 ***Parameters:*** omgd.scale_detector(path_list: Sequence, Y, factors:Sequence, disc_interval:Sequence, type_factors:Sequence=[], quantile:float=0.8, n_variates=1, random_state=0)
 ***Parameters:*** omgd.scale_plot(scale_result, size_list=[], dpi=100, unit='')
 
@@ -52,6 +53,7 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 > omgd_result = omgd.omgd(data, Y=Y, factors=X, n_variates=n_variates, disc_interval=discitv)<br>
 > omgd.omgd_plot(omgd_result, unit_list=['°C', '%', 'm', '', '', '', ''])<br>
 > plt.show()<br>
+
 ***Parameters:*** omgd(df:pd.DataFrame, Y, factors:Sequence, n_variates:int, disc_interval:Sequence, type_factors:Sequence=[], random_state=0)
 The result of the ***omgd.omgd*** function returns a dictionary, defined as omgd_result here, which includes original dataframe: omgd_result['original'], classification result: omgd_result['classify'], result of the factor detector: omgd_result['factor'], result of the interaction detector: omgd_result['interaction'], result of the risk detector: omgd_result['risk'], and result of the ecological detector: omgd_result['ecological'].
 <br>
