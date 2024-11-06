@@ -29,4 +29,19 @@ Download anaconda from https://www.anaconda.com/, open anaconda promt (using sea
 Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 ### Explanation
 > path_list = ['data/LST2000.csv', 'data/LST3000.csv', 'data/LST4000.csv', 'data/LST5000.csv',
-> 'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']
+>              'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']
+> - Define a list that contains data with multiple spatial scale
+
+> data = pd.read_csv('data/LST2000.csv')
+> Y = data.columns[0]
+> X = data.columns[1:]
+> discitv = range(3, 8)
+> n_variates = 2
+> - Define the dependent variable[Y] and explanatory variables[X], the discretization(classification) interval[discitv] and the number of explanatory variables used in the calculation(n_variates).
+
+> scale_result, best_scale = omgd.scale_detector(path_list, Y, X, discitv, quantile=0.8, n_variates=n_variates)
+> omgd.scale_plot(scale_result, size_list=[2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000], dpi=200, unit='m')
+> plt.show()
+> - Run the scale detector to detect the optimal spatial scale for spatial stratified heterogeneity
+> - ***Parameters:*** omgd.scale_detector(path_list: Sequence, Y, factors:Sequence, disc_interval:Sequence, type_factors:Sequence=[], quantile:float=0.8, n_variates=1, random_state=0)
+> - ***Parameters:*** omgd.scale_plot(scale_result, size_list=[], dpi=100, unit='')
