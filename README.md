@@ -45,3 +45,13 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 - Run the scale detector to detect the optimal spatial scale for spatial stratified heterogeneity
 - ***Parameters:*** omgd.scale_detector(path_list: Sequence, Y, factors:Sequence, disc_interval:Sequence, type_factors:Sequence=[], quantile:float=0.8, n_variates=1, random_state=0)
 - ***Parameters:*** omgd.scale_plot(scale_result, size_list=[], dpi=100, unit='')
+
+> omgd_result = omgd.omgd(data, Y=Y, factors=X, n_variates=n_variates, disc_interval=discitv)
+> print(omgd_result['classify'])
+> # omgd_result['classify'].to_csv('LST_classify.csv')
+> print(omgd_result['factor'])
+> omgd.omgd_plot(omgd_result, unit_list=['°C', '%', 'm', '', '', '', ''])
+> plt.show()
+- One step OMGD model
+- ***Parameters:*** omgd(df:pd.DataFrame, Y, factors:Sequence, n_variates:int, disc_interval:Sequence, type_factors:Sequence=[], random_state=0)
+- The result of the ***omgd.omgd*** function returns a dictionary, defined as omgd_result here, which includes original dataframe: omgd_result['original'], classification result: omgd_result['classify'], result of the factor detector: omgd_result['factor'], result of the interaction detector: omgd_result['interaction'], result of the risk detector: omgd_result['risk'], and result of the ecological detector: omgd_result['ecological'].
