@@ -43,7 +43,7 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 - ***type_factor*** specifys the fields (name) which is already categorized rather than continuous. <br>
 - ***quantile*** defines how many variables are used to calculated the avaergae ***Q*** value (e.g., we have 10 variables / variables combinations, and the quantile is 0.8, then only the top 3 ***Q*** values are used to calculate the avaergae ***Q*** value). <br>
 - ***n_variates*** indicates how many variables are used in the analysis. <br>
-- the scale detector function returns scale_result(dataframe) and the best_scale(location of the optimal scale data file), the scale_result can be plotted using scale_plot(scale_result, size_list=[], dpi=100, unit='')
+- the scale detector function returns scale_result (dataframe) and the best_scale (location of the optimal scale data file), the scale_result can be plotted using scale_plot (scale_result, size_list=[], dpi=100, unit='')
 
 ### def omgd(df:pd.DataFrame, Y, factors:Sequence, n_variates:int, disc_interval:Sequence, type_factors:Sequence=[], random_state=0)
 
@@ -65,7 +65,7 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 
 ### def classify(X, n_clusters, classify_result, colname, random_state=0)
 
-- function classify is used to automatically classify(discritize) continuous variables or variables combinations into ***n_clusters*** catogory, ***X*** is the values dataframe (explanatory variables), the result is stored in ***classify_result*** and colname is made up of single or multiple fields (explanatory variables) spliced together using '_'. <br>
+- function classify is used to automatically classify (discritize) continuous variables or variables combinations into ***n_clusters*** catogory, ***X*** is the values dataframe (explanatory variables), the result is stored in ***classify_result*** and colname is made up of single or multiple fields (explanatory variables) spliced together using '_'. <br>
 - the classification result can be plotted using 'classify_plot(original_df:pd.DataFrame, classify_df:pd.DataFrame, dpi=100, nrows=0, ncols=0, unit_list=[])'
 
 
