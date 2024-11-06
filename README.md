@@ -33,7 +33,7 @@ Download anaconda from https://www.anaconda.com/, open anaconda promt (using sea
 ## How to use
 Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 
-## Description of main function
+## Description of main functions
 
 ### def scale_detector(path_list: Sequence, Y, factors:Sequence, disc_interval:Sequence, type_factors:Sequence=[], quantile:float=0.8, n_variates=1, random_state=0)
 
