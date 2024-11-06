@@ -34,14 +34,14 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 > path_list = ['data/LST2000.csv', 'data/LST3000.csv', 'data/LST4000.csv', 'data/LST5000.csv',<br>
 >              'data/LST6000.csv', 'data/LST7000.csv', 'data/LST8000.csv', 'data/LST9000.csv']<br>
 
-- Define the dependent variable[Y] and explanatory variables[X], the discretization(classification) interval[discitv] and the number of explanatory variables used in the calculation(n_variates).
+### Define the dependent variable[Y] and explanatory variables[X], the discretization(classification) interval[discitv] and the number of explanatory variables used in the calculation(n_variates).
 > data = pd.read_csv('data/LST2000.csv')<br>
 > Y = data.columns[0]<br>
 > X = data.columns[1:]<br>
 > discitv = range(3, 8)<br>
 > n_variates = 2<br>
 
-- Run the scale detector to detect the optimal spatial scale for spatial stratified heterogeneity
+### Run the scale detector to detect the optimal spatial scale for spatial stratified heterogeneity
 > scale_result, best_scale = omgd.scale_detector(path_list, Y, X, discitv, quantile=0.8, n_variates=n_variates)<br>
 > omgd.scale_plot(scale_result, size_list=[2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000], dpi=200, unit='m')<br>
 > plt.show()<br>
@@ -49,7 +49,7 @@ Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
 - ***Parameters:*** omgd.scale_plot(scale_result, size_list=[], dpi=100, unit='')
 <br>
 
-- One step OMGD model
+### One step OMGD model
 > omgd_result = omgd.omgd(data, Y=Y, factors=X, n_variates=n_variates, disc_interval=discitv)<br>
 > omgd.omgd_plot(omgd_result, unit_list=['°C', '%', 'm', '', '', '', ''])<br>
 > plt.show()<br>
