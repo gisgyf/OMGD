@@ -15,7 +15,7 @@ http://geodetector.cn/
 - ***test.ipynb*** and ***test.py*** are used to reproduce the results shown in the main text.<br>
 
 ## Python (Anaconda) Environment
-You can create your own environment with the following dependencies or download the conda environment(folder) directly and configurate it.
+You can create your own environment with the following dependencies or install the packages using pip, or download the conda environment(folder) directly and configurate it.
 ### Dependencies
 - jenkspy == 0.4.0
 - matplotlib == 3.7.3
