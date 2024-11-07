@@ -27,6 +27,8 @@ You can create your own environment with the following dependencies or download 
 - scikit-learn == 1.3.0
 - scipy == 1.12.0
 - seaborn == 0.12.2
+### Install using pip
+> pip install -r requirements.txt
 ### Conda environment
 Download anaconda from https://www.anaconda.com/, open anaconda promt (using search bar), change the dictonary to the folder which contains ***'omgd.yml'***, input ***'conda env create -f omgd.yml'*** and ***'conda env list'*** to check if the omgd environment is configurated.
 
