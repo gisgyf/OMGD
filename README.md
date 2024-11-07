@@ -17,6 +17,7 @@ http://geodetector.cn/
 ## Python (Anaconda) Environment
 You can create your own environment with the following dependencies or install the packages using pip, or download the conda environment(folder) directly and configurate it.
 ### Dependencies
+- Python == 3.10
 - jenkspy == 0.4.0
 - matplotlib == 3.7.3
 - numpy == 2.6.4
