@@ -1,5 +1,5 @@
 # Optimal Multivariate-stratification Geographical Detector
-##How to cite
+## How to cite
 Guo, Y., Wu, Z., Zheng, Z., & Li, X. (2024). An optimal multivariate-stratification geographical detector model for revealing the impact of multi-factor combinations on the dependent variable. GIScience & Remote Sensing, 61(1). https://doi.org/10.1080/15481603.2024.2422941
 
 ## Basic knowledge of Geodetector
