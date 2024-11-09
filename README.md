@@ -33,7 +33,7 @@ You can create your own environment with the following dependencies or install t
 > cd ***your folder path*** <br>
 > pip install -r requirements.txt
 ### Conda environment
-Download anaconda from https://www.anaconda.com/, open anaconda promt (using search bar), change the dictonary to the folder which contains ***'omgd.yml'***, input ***'conda env create -f omgd.yml'*** and ***'conda env list'*** to check if the omgd environment is configurated.
+Download anaconda from https://www.anaconda.com/, open anaconda promt (using search bar), change the location to the folder which contains ***'omgd.yml'***, change the prefix of in the ***'omgd.yml'*** to the location you want, input ***'conda env create -f omgd.yml -n omgd'*** and ***'conda env list'*** to check if the omgd environment is configurated.
 
 ## How to use
 Open ***test.ipynb*** or ***test.py***, run the code to see if it works.
