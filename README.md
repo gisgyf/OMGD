@@ -22,6 +22,7 @@ You can install the dependencies using pip, or download the conda environment(fo
 ### Install using pip
 Python >= 3.7 & Python < 3.11
 > cd ***your folder path*** <br>
+> pip install wheel==0.41.2
 > pip install -r requirements.txt
 ### Conda environment
 Download anaconda from https://www.anaconda.com/, open anaconda promt (using search bar), change the location to the folder which contains ***'omgd.yml'***, change the prefix in the ***'omgd.yml'*** to the target location, input ***'conda env create -f omgd.yml -n omgd'*** and ***'conda env list'*** to check if the omgd environment is configurated.
