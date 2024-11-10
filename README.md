@@ -10,10 +10,12 @@ http://geodetector.cn/
 
 ## Files description
 - ***data*** folder contains all the case data used in the article, stored in csv file format.<br>
-- ***omgd.py*** consists of the main functions of the Optimal Multivariate-stratification Geographical Detector, including computation functions and visualization functions.<br>
+- ***omgd.py*** consists of the main functions of the Optimal Multivariate-stratification Geographical Detector (OMGD) model, including computation functions and visualization functions.<br>
 - ***sample.py*** is used to sample data at a certain ratio (e.g. 50%).<br>
 - ***simulation.py*** offers simulation results discussed in Section 3.2.<br>
 - ***test.ipynb*** and ***test.py*** are used to reproduce the results shown in the main text.<br>
+- ***Supplemental material.pdf*** is the overview of functions of the OMGD model.<br>
+- ***requirements.txt*** and ***omgd.yml*** helps you quickly build Python / anaconda environment, respectivly.
 
 ## Python (Anaconda) Environment
 You can install the dependencies using pip, or download the conda environment(folder) directly and configurate it.
