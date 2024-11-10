@@ -8,10 +8,6 @@ cffi==1.16.0
 charset-normalizer==3.3.2
 colorama==0.4.6
 comm==0.2.1
-conda==24.4.0
-conda-libmamba-solver==24.1.0
-conda-package-handling==2.2.0
-conda-package-streaming==0.9.0
 contourpy==1.2.0
 cycler==0.11.0
 decorator==5.1.1
@@ -33,8 +29,6 @@ jsonpatch==1.33
 jsonpointer==2.4
 jupyterlab-widgets==3.0.10
 kiwisolver==1.4.4
-libmambapy==1.5.8
-mamba==1.5.8
 matplotlib==3.7.3
 matplotlib-inline==0.1.6
 menuinst==2.0.2
