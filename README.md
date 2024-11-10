@@ -16,20 +16,9 @@ http://geodetector.cn/
 - ***test.ipynb*** and ***test.py*** are used to reproduce the results shown in the main text.<br>
 
 ## Python (Anaconda) Environment
-You can create your own environment with the following dependencies or install the packages using pip, or download the conda environment(folder) directly and configurate it.
-### Dependencies
-- Python == 3.10
-- jenkspy == 0.4.0
-- matplotlib == 3.7.3
-- numpy == 2.6.4
-- openpyxl == 3.0.10
-- pandas == 2.1.4
-- pyamg == 4.2.3
-- pillow == 10.2.0
-- scikit-learn == 1.3.0
-- scipy == 1.12.0
-- seaborn == 0.12.2
+You can install the dependencies using pip, or download the conda environment(folder) directly and configurate it.
 ### Install using pip
+Python >= 3.7 & Python < 3.11
 > cd ***your folder path*** <br>
 > pip install -r requirements.txt
 ### Conda environment
